@@ -45,9 +45,11 @@
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "@types/bun": "latest"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "private": true
 }
