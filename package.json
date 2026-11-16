@@ -1,14 +1,11 @@
 {
   "name": "@omnesight/sdk",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Official TypeScript/JavaScript SDK for Omnesight Sovereign Operational Intelligence & Autonomous Execution Infrastructure",
   "author": "Omnesight Infrastructure Team <solutions@omnesight.com>",
   "license": "Apache-2.0",
   "homepage": "https://omnesight.com",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Omnesight/omnesight-ts.git"
-  },
+  "repository": "https://github.com/Omnesight/omnesight-ts.git",
   "bugs": {
     "url": "https://github.com/Omnesight/omnesight-ts/issues"
   },
