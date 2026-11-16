@@ -1,0 +1,56 @@
+{
+  "name": "@omnesight/sdk",
+  "version": "1.2.0",
+  "description": "Official TypeScript/JavaScript SDK for Omnesight Sovereign Operational Intelligence & Autonomous Execution Infrastructure",
+  "author": "Omnesight Infrastructure Team <solutions@omnesight.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://omnesight.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omnesight/omnesight-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Omnesight/omnesight-ts/issues"
+  },
+  "keywords": [
+    "omnesight",
+    "operational-intelligence",
+    "autonomous-execution",
+    "enterprise-ai",
+    "runtime-governance",
+    "supervised-action-protocol",
+    "ledger-reconciliation",
+    "telemetry"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/build-cjs.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/sdk.test.ts",
+    "test:src": "node --import tsx --test tests/**/*.test.ts",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
